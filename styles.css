@@ -1,0 +1,488 @@
+:root {
+
+    --pri-Strong-Cyan: hsl(171, 66%, 44%);
+    --pri-Light-Blue: hsl(233, 100%, 69%);
+
+    --neu-Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --neu-Grayish-Blue: hsl(201, 11%, 66%);
+
+
+    --ff: 'Bai Jamjuree', serif;
+    --fw400: 400;
+    --fw600: 600;
+
+}
+
+/***RESET****/
+
+* {
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+img,
+picture,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+
+button,
+input {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+/***Genral*****/
+
+body {
+    font-size: 18px;
+    font-family: var(--ff);
+    color: var(--neu-Grayish-Blue);
+}
+
+
+header {
+    padding: 1rem;
+    text-align: center;
+    background: url(./images/bg-header-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header>picture>img {
+    margin: 5rem auto;
+}
+
+.title {
+    color: var(--neu-Dark-Grayish-Blue);
+    font-size: 2.1rem;
+    font-weight: var(--fw400);
+}
+
+.header-text {
+    line-height: 1.4;
+    padding: 1rem;
+}
+
+
+
+/****  BUTTONS *******/
+.btn-div {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.btn {
+    border: none;
+    padding: .8rem;
+    border-radius: 1.5rem;
+
+    background-color: var(--pri-Strong-Cyan);
+    color: white;
+}
+
+.btn-mac {
+    background-color: var(--pri-Light-Blue);
+}
+
+
+
+
+
+
+
+
+/**** SNIPPET ******/
+
+.snippet {
+    margin-top: 10rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.snippet>h2 {
+    color: var(--neu-Dark-Grayish-Blue);
+    font-size: 2rem;
+}
+
+.snippet-text {
+    padding: 1rem;
+    line-height: 1.4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*****FEATURES*****/
+
+.features {
+    padding: 1rem;
+}
+
+.features-flex {
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    line-height: 1.4;
+}
+
+.features>div {
+    padding: 1rem;
+}
+
+
+.features-flex h3 {
+    color: var(--neu-Dark-Grayish-Blue);
+}
+
+
+
+
+
+
+
+
+/*****IMAGE DEVICES******/
+
+.image-devices {
+    margin: 4rem 0;
+    padding: 1rem;
+}
+
+
+
+
+
+/******SUPERCHARGE********/
+.supercharge {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.supercharge-head>h2 {
+    color: var(--neu-Dark-Grayish-Blue);
+    margin: 1rem;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card>img {
+    width: 3rem;
+    margin: 2rem auto;
+
+}
+
+.card>h3 {
+    color: var(--neu-Dark-Grayish-Blue);
+}
+
+.card>p {
+    margin: 1rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*****Company image flexbox*****/
+.company-img-flex {
+    padding: 1rem;
+    margin: 4rem 0;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4rem;
+
+}
+
+
+.company-img-flex>img {
+    width: 7rem;
+}
+
+
+
+
+
+
+
+
+
+
+/*********
+Download
+*********/
+.download {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.download>span {
+    color: var(--neu-Dark-Grayish-Blue);
+    font-size: 2rem;
+}
+
+.download>p {
+    margin: 1rem;
+}
+
+
+
+
+
+
+/******FOOTER********/
+footer {
+    text-align: center;
+    color: var(--neu-Dark-Grayish-Blue);
+}
+
+footer>* {
+    margin: 1rem 0;
+}
+
+footer>img {
+    margin-inline: auto;
+    width: 3rem;
+}
+
+.extra {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.icon-flex {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+/******HOVER********/
+.btn-ios:hover {
+    background-color: hsl(171, 66%, 44%, .8);
+    cursor: pointer;
+}
+
+.btn-mac:hover {
+    background-color: hsl(233, 100%, 69%, .8);
+    cursor: pointer;
+}
+
+
+footer span:hover {
+    color: var(--pri-Strong-Cyan);
+}
+
+.icon-flex img:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/*****MEDIA******/
+
+
+@media (min-width:1000px) {
+
+    /**********
+    Header
+    *********/
+    header {
+        background: url(./images/bg-header-desktop.png);
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .title {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    .header-text {
+        max-width: 600px;
+    }
+
+
+
+    /**********
+    BTN
+    *********/
+    .btn-div {
+        flex-direction: row;
+    }
+
+
+    /**********
+    snippet
+    *********/
+    .snippet-text {
+        max-width: 600px;
+    }
+
+    /**********
+    features
+    *********/
+    .features {
+        margin-top: 4rem;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .features-flex {
+        text-align: start;
+        gap: 4rem;
+    }
+
+
+    .features-flex p {
+        max-width: 400px;
+    }
+
+
+    /**********
+    img-devices
+    *********/
+    .image-devices>img {
+        margin: 0 auto;
+    }
+
+
+
+    /**********
+    superCharger
+    *********/
+    .card>p {
+        max-width: 400px;
+    }
+
+    .supercharge-flex {
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+
+    /**********
+    company img 
+    *********/
+    .company-img-flex {
+        flex-direction: row;
+    }
+
+
+    .download {
+        align-items: center;
+    }
+
+    .download>span {
+        font-weight: 600;
+    }
+
+    .download-text {
+        max-width: 400px;
+    }
+
+
+
+    /**********
+    footer
+    *********/
+    footer {
+
+        text-align: start;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        gap: 1rem;
+
+
+        padding: 0 10rem;
+
+    }
+
+    footer>img {
+        margin-inline: 0;
+        width: 4rem;
+    }
+
+}
